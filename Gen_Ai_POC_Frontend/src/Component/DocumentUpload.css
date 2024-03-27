@@ -1,0 +1,231 @@
+/* Add these styles to your existing CSS file or create a new one */
+
+.document-upload-container {
+  /* max-width: 150%; */
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Add margin for separation */
+  justify-content: center;
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+.document-upload-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.document-upload-list {
+  margin-top: 20px;
+
+  padding: 20px;
+}
+.document-list {
+  margin-top: 20px;
+
+  padding: 20px;
+}
+
+.document-list h3 {
+  margin-bottom: 10px;
+}
+
+.document-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-list li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 0;
+}
+
+.document-container {
+  flex: 3;
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Add margin for separation */
+  justify-content: center;
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+.document-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.doc-count {
+  margin: 20px;
+}
+
+.document-list table {
+  width: 90%;
+
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: scroll;
+  max-height: 20%;
+}
+
+.document-list tbody tr:hover {
+  transform: scale(1.1); /* Zoom in effect on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.document-list th,
+.document-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.document-list th table {
+  background-color: #f2f2f2;
+}
+
+.document-list button {
+  background-color: #ff6961;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 1000px) {
+  .document-list th,
+  .document-list td {
+    font-size: 12px;
+  }
+
+  .document-list button {
+    font-size: 12px;
+  }
+}
+
+/* Rest of your existing styles */
+
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; /* Adjust the height as needed */
+  background-color: #d3e0e2;
+}
+
+.side-nav-left {
+  /*background-color: #f0f0f0; /* Adjust the background color as needed */
+  /* padding: 20px; */
+}
+
+.document-table {
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex: 4;
+}
+
+.left-section {
+  width: 40%;
+  padding: 20px;
+}
+
+.right-section {
+  width: 55%;
+  padding: 20px;
+  height: 100%;
+}
+
+.file-input-container {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.upload-button-container {
+  display: block;
+  color: aqua; /* Forces the button to be on a new line */
+}
+
+.upload-button {
+  background-color: #fefefe;
+  color: #343030;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+}
+
+.upload-button:hover {
+  background-color: #a0dfef; /* Change the color on hover */
+  transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Add this CSS to your existing DocumentUpload.css or create a new CSS file */
+
+/* Background blur effect for the entire screen when the modal is active */
+body.modal-active {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value for the desired level of transparency */
+  z-index: 999;
+}
+
+.delete-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d3e0e2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.delete-modal p {
+  margin-bottom: 20px;
+}
+
+.delete-modal button {
+  /* background-color: #194555; */
+  background-color: transparent;
+  color: #26bbd5;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-modal button:hover {
+  /* background-color: #2315e2; */
+  color: #0a4ddf;
+  transform: scale(2.4);
+}
