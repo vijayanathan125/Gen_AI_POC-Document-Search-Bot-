@@ -34,11 +34,11 @@ const Home = () => {
             <li>Efficient Document Search</li>
             <li>AI-Powered Content Understanding</li>
             <li>Question-Answering Capability</li>
-            {/* Add more features as needed */}
+            
           </ul>
         </div>
 
-        {/* Add more sections, such as a demo video or links to other pages if necessary */}
+       
       </div>
     </div>
   );
